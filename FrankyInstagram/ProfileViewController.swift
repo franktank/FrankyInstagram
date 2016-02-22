@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Parse
 class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -21,6 +21,16 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onLogout(sender: AnyObject) {
+        PFUser.logOutInBackgroundWithBlock { (error: NSError?) -> Void in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                print("Logged out!")
+                self.performSegueWithIdentifier("logoutSegue", sender: nil)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

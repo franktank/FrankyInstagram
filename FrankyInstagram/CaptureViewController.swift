@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import EZLoadingActivity
 
 class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
@@ -57,6 +58,7 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var onSubmit: UIButton!
     
     @IBAction func clickSubmit(sender: AnyObject) {
+        EZLoadingActivity.show("Loading...", disableUI: false)
         if (postImageView.image != nil && captionField.text != "") {
            
             userMedia.postUserImage(postImageView.image!, withCaption: captionField.text!, withCompletion: { (success: Bool, error: NSError?) -> Void in
@@ -66,6 +68,7 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
                     
                 } else {
                     print("Posted Image Successfully")
+                    EZLoadingActivity.hide()
                  
                 }
             })

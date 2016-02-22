@@ -21,8 +21,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.reloadData()
         serverRequest()
+        tableView.reloadData()
+        
         
 
         // Do any additional setup after loading the view.
@@ -40,7 +41,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCellWithIdentifier("HomeCell", forIndexPath: indexPath) as! HomeTableViewCell
         
         if (userMedia?[indexPath.row]["media"] != nil) {
-            let imagePost = userMedia?[indexPath.section]["media"] as! PFFile
+            let imagePost = userMedia?[indexPath.row]["media"] as! PFFile
             imagePost.getDataInBackgroundWithBlock({ (imageData: NSData?, error: NSError?) -> Void in
                 if let error = error {
                     print(error.localizedDescription)
@@ -53,7 +54,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         if (userMedia?[indexPath.row]["caption"] != nil) {
-            cell.homepostCaptionLabel.text = userMedia![indexPath.section]["caption"] as? String
+            cell.homepostCaptionLabel.text = userMedia![indexPath.row]["caption"] as? String
         }
         
         
@@ -72,11 +73,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func serverRequest() {
         let query = PFQuery(className: "UserMedia")
+        query.orderByDescending("createdAt")
+        query.includeKey("author")
         query.limit = 20
         
         query.findObjectsInBackgroundWithBlock { (media: [PFObject]?, error: NSError?) -> Void in
             if let media = media {
                 self.userMedia = media
+                print(media)
                 self.tableView.reloadData()
                 
                 // do something with the array of object returned by the call

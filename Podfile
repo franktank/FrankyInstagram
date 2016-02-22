@@ -5,6 +5,6 @@ use_frameworks!
 
 target 'FrankyInstagram' do
 pod 'Parse'
-
+pod ‘EZLoadingActivity’
 end
 

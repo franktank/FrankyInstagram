@@ -57,7 +57,7 @@
         <!--Item-->
         <scene sceneID="NU1-ZD-0TS">
             <objects>
-                <viewController id="BLU-wa-SJE" sceneMemberID="viewController">
+                <viewController id="BLU-wa-SJE" customClass="ProfileViewController" customModule="FrankyInstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jxi-1d-lyq"/>
                         <viewControllerLayoutGuide type="bottom" id="6LA-F1-yiu"/>

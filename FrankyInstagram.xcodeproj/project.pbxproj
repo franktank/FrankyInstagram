@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A204B3E1C7A682E001E7188 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A204B3D1C7A682E001E7188 /* LoginViewController.swift */; };
+		0A204B401C7A74F7001E7188 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A204B3F1C7A74F7001E7188 /* HomeViewController.swift */; };
+		0A204B421C7A7B4C001E7188 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A204B411C7A7B4C001E7188 /* HomeTableViewCell.swift */; };
+		0A204B441C7A7CB6001E7188 /* UserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A204B431C7A7CB6001E7188 /* UserMedia.swift */; };
+		0A204B461C7A8740001E7188 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A204B451C7A8740001E7188 /* CaptureViewController.swift */; };
 		0A4DA6EF1C7A629B00B03A2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DA6EE1C7A629B00B03A2A /* AppDelegate.swift */; };
 		0A4DA6F11C7A629B00B03A2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DA6F01C7A629B00B03A2A /* ViewController.swift */; };
 		0A4DA6F41C7A629B00B03A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4DA6F21C7A629B00B03A2A /* Main.storyboard */; };
 		0A4DA6F61C7A629B00B03A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4DA6F51C7A629B00B03A2A /* Assets.xcassets */; };
 		0A4DA6F91C7A629B00B03A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4DA6F71C7A629B00B03A2A /* LaunchScreen.storyboard */; };
+		E4686AA1402DF9B8A856B5FC /* Pods_FrankyInstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69709C95033B5B4E6C79425B /* Pods_FrankyInstagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A204B3D1C7A682E001E7188 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A204B3F1C7A74F7001E7188 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A204B411C7A7B4C001E7188 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		0A204B431C7A7CB6001E7188 /* UserMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedia.swift; sourceTree = "<group>"; };
+		0A204B451C7A8740001E7188 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		0A4DA6EB1C7A629B00B03A2A /* FrankyInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrankyInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4DA6EE1C7A629B00B03A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A4DA6F01C7A629B00B03A2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,9 @@
 		0A4DA6F51C7A629B00B03A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A4DA6F81C7A629B00B03A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4DA6FA1C7A629B00B03A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2601FB77966F4B5EB296BEC0 /* Pods-FrankyInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankyInstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrankyInstagram/Pods-FrankyInstagram.release.xcconfig"; sourceTree = "<group>"; };
+		69709C95033B5B4E6C79425B /* Pods_FrankyInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrankyInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E137BF3E4AE3C144AF0FF21F /* Pods-FrankyInstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankyInstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrankyInstagram/Pods-FrankyInstagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4686AA1402DF9B8A856B5FC /* Pods_FrankyInstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03499955D323E3DD26DCBA73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69709C95033B5B4E6C79425B /* Pods_FrankyInstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0A4DA6E21C7A629B00B03A2A = {
 			isa = PBXGroup;
 			children = (
 				0A4DA6ED1C7A629B00B03A2A /* FrankyInstagram */,
 				0A4DA6EC1C7A629B00B03A2A /* Products */,
+				5B0D9F45344F8F0A7E8A8E4B /* Pods */,
+				03499955D323E3DD26DCBA73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +82,25 @@
 				0A4DA6EE1C7A629B00B03A2A /* AppDelegate.swift */,
 				0A4DA6F01C7A629B00B03A2A /* ViewController.swift */,
 				0A4DA6F21C7A629B00B03A2A /* Main.storyboard */,
+				0A204B431C7A7CB6001E7188 /* UserMedia.swift */,
+				0A204B411C7A7B4C001E7188 /* HomeTableViewCell.swift */,
+				0A204B3F1C7A74F7001E7188 /* HomeViewController.swift */,
+				0A204B451C7A8740001E7188 /* CaptureViewController.swift */,
 				0A4DA6F51C7A629B00B03A2A /* Assets.xcassets */,
 				0A4DA6F71C7A629B00B03A2A /* LaunchScreen.storyboard */,
 				0A4DA6FA1C7A629B00B03A2A /* Info.plist */,
+				0A204B3D1C7A682E001E7188 /* LoginViewController.swift */,
 			);
 			path = FrankyInstagram;
+			sourceTree = "<group>";
+		};
+		5B0D9F45344F8F0A7E8A8E4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E137BF3E4AE3C144AF0FF21F /* Pods-FrankyInstagram.debug.xcconfig */,
+				2601FB77966F4B5EB296BEC0 /* Pods-FrankyInstagram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4DA6FD1C7A629B00B03A2A /* Build configuration list for PBXNativeTarget "FrankyInstagram" */;
 			buildPhases = (
+				01906DA4A71B384380E651CA /* Check Pods Manifest.lock */,
 				0A4DA6E71C7A629B00B03A2A /* Sources */,
 				0A4DA6E81C7A629B00B03A2A /* Frameworks */,
 				0A4DA6E91C7A629B00B03A2A /* Resources */,
+				CF1003E8A17AD61B5508ACCF /* Embed Pods Frameworks */,
+				1D728B113C2F2B82D80B645D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +172,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01906DA4A71B384380E651CA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D728B113C2F2B82D80B645D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrankyInstagram/Pods-FrankyInstagram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF1003E8A17AD61B5508ACCF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrankyInstagram/Pods-FrankyInstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A4DA6E71C7A629B00B03A2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A204B3E1C7A682E001E7188 /* LoginViewController.swift in Sources */,
+				0A204B441C7A7CB6001E7188 /* UserMedia.swift in Sources */,
+				0A204B461C7A8740001E7188 /* CaptureViewController.swift in Sources */,
+				0A204B421C7A7B4C001E7188 /* HomeTableViewCell.swift in Sources */,
 				0A4DA6F11C7A629B00B03A2A /* ViewController.swift in Sources */,
 				0A4DA6EF1C7A629B00B03A2A /* AppDelegate.swift in Sources */,
+				0A204B401C7A74F7001E7188 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +340,7 @@
 		};
 		0A4DA6FE1C7A629B00B03A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E137BF3E4AE3C144AF0FF21F /* Pods-FrankyInstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FrankyInstagram/Info.plist;
@@ -256,6 +352,7 @@
 		};
 		0A4DA6FF1C7A629B00B03A2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2601FB77966F4B5EB296BEC0 /* Pods-FrankyInstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FrankyInstagram/Info.plist;
@@ -284,6 +381,7 @@
 				0A4DA6FF1C7A629B00B03A2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
